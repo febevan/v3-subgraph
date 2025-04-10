@@ -18,7 +18,7 @@ export enum NETWORK {
   WORLDCHAIN = 'worldchain-mainnet',
   ZKSYNC_ERA = 'zksync-era',
   ZORA = 'zora-mainnet',
-  HASHKEY_TESTNET = 'hashkey-testnet',
+  HASHKEY_CHAIN_SEPOLIA = 'hashkey-chain-sepolia',
 }
 
 export enum SUBGRAPH_TYPE {
