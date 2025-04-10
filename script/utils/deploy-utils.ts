@@ -45,6 +45,8 @@ export const deploy = async (subgraphType: string): Promise<void> => {
 
   const deployCommand = `graph deploy --studio ${subgraphName} --access-token ${accessToken} --version-label ${gitHashString} ${subgraphType}-subgraph.yaml`
 
+  console.log(deployCommand, 'deployCommand===')
+
   try {
     console.log(`Deploying subgraph ${subgraphName} to The Graph Studio...`)
     console.log(`Executing: ${deployCommand.replace(accessToken, '****')}`)
