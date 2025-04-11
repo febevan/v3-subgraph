@@ -31,11 +31,15 @@ export const deploy = async (subgraphType: string): Promise<void> => {
   const { stdout: gitHash } = await exec('git rev-parse --short HEAD')
   const gitHashString = gitHash.toString().trim()
 
-  const subgraphName = process.env.SUBGRAPH_NAME
-  const accessToken = process.env.GRAPH_ACCESS_TOKEN
+  const subgraphName = subgraphType === 'v3-tokens' 
+    ? process.env.TOKEN_SUBGRAPH_NAME 
+    : process.env.SUBGRAPH_NAME
+  const accessToken = subgraphType === 'v3-tokens' 
+    ? process.env.TOKEN_GRAPH_ACCESS_TOKEN 
+    : process.env.GRAPH_ACCESS_TOKEN
 
   if (!subgraphName) {
-    console.error('Error: SUBGRAPH_NAME not found in .env file.')
+    console.error('Error: SUBGRAPH_NAME or TOKEN_SUBGRAPH_NAME not found in .env file.')
     process.exit(1)
   }
   if (!accessToken) {
