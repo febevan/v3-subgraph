@@ -3,7 +3,7 @@ import { Address, BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 export const FACTORY_ADDRESS = '0xa4eE64Df948e3FB4C5EA9974729E9F10557aE14E'
 
 export const REFERENCE_TOKEN = '0xCA8aAceEC5Db1e91B9Ed3a344bA026c4a2B3ebF6' // 需要替换为实际的 WETH 地址
-export const STABLE_TOKEN_POOL = '0xbE6cAD380f232d848C788d2d7D65DC9A50d2eCC3' // 需要替换为实际的稳定币池地址
+export const STABLE_TOKEN_POOL = '0x6f3823656df23dc53bcf94b41294967726804107' // 需要替换为实际的稳定币池地址
 
 export const TVL_MULTIPLIER_THRESHOLD = '2'
 export const MATURE_MARKET = '1000000'
