@@ -18,7 +18,7 @@ export const ROLL_DELETE_MINUTE_LIMITER = BigInt.fromI32(1000)
 // 需要根据实际情况配置白名单代币
 export const WHITELIST_TOKENS: string[] = [
   REFERENCE_TOKEN, // WETH
-  '0xbE6cAD380f232d848C788d2d7D65DC9A50d2eCC3', // USDT
+  '0x60efca24b785391c6063ba37ff917ff0edeb9f4a', // USDT
 ]
 
 export const STABLE_COINS: string[] = []
