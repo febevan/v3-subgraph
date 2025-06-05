@@ -19,6 +19,7 @@ export enum NETWORK {
   ZKSYNC_ERA = 'zksync-era',
   ZORA = 'zora-mainnet',
   HASHKEY_CHAIN_SEPOLIA = 'hashkey-chain-sepolia',
+  HASHKEY_CHAIN = 'hashkey-chain',
 }
 
 export enum SUBGRAPH_TYPE {
