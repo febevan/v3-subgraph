@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+exports.factoryContract = exports.BI_18 = exports.ONE_BD = exports.ZERO_BD = exports.ONE_BI = exports.ZERO_BI = exports.ADDRESS_ZERO = void 0;
+var graph_ts_1 = require("@graphprotocol/graph-ts");
+var Factory_1 = require("../../generated/Factory/Factory");
+var chain_1 = require("./chain");
+exports.ADDRESS_ZERO = '0x0000000000000000000000000000000000000000';
+exports.ZERO_BI = graph_ts_1.BigInt.fromI32(0);
+exports.ONE_BI = graph_ts_1.BigInt.fromI32(1);
+exports.ZERO_BD = graph_ts_1.BigDecimal.fromString('0');
+exports.ONE_BD = graph_ts_1.BigDecimal.fromString('1');
+exports.BI_18 = graph_ts_1.BigInt.fromI32(18);
+exports.factoryContract = Factory_1.Factory.bind(graph_ts_1.Address.fromString(chain_1.FACTORY_ADDRESS));

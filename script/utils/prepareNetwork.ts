@@ -20,6 +20,7 @@ export enum NETWORK {
   ZORA = 'zora-mainnet',
   HASHKEY_CHAIN_SEPOLIA = 'hashkey-chain-sepolia',
   HASHKEY_CHAIN = 'hashkey-chain',
+  X_LAYER = 'x-layer',
 }
 
 export enum SUBGRAPH_TYPE {
