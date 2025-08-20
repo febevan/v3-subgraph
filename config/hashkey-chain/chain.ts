@@ -1,8 +1,8 @@
 import { Address, BigDecimal, BigInt } from '@graphprotocol/graph-ts'
 
-export const FACTORY_ADDRESS = '0xa4eE64Df948e3FB4C5EA9974729E9F10557aE14E'
+export const FACTORY_ADDRESS = '0xd02b0aF9b4A8062D13e07431eDbC6bE9c9BDdb3A'
 
-export const REFERENCE_TOKEN = '0xCA8aAceEC5Db1e91B9Ed3a344bA026c4a2B3ebF6' // 需要替换为实际的 WETH 地址
+export const REFERENCE_TOKEN = '0xB210D2120d57b758EE163cFfb43e73728c471Cf1' // 需要替换为实际的 WETH 地址
 export const STABLE_TOKEN_POOL = '0x6f3823656df23dc53bcf94b41294967726804107' // 需要替换为实际的稳定币池地址
 
 export const TVL_MULTIPLIER_THRESHOLD = '2'
@@ -18,7 +18,9 @@ export const ROLL_DELETE_MINUTE_LIMITER = BigInt.fromI32(1000)
 // 需要根据实际情况配置白名单代币
 export const WHITELIST_TOKENS: string[] = [
   REFERENCE_TOKEN, // WETH
-  '0x60efca24b785391c6063ba37ff917ff0edeb9f4a', // USDT
+  '0x60EFCa24B785391C6063ba37fF917Ff0edEb9f4a', // USDT
+  '0x47725537961326e4b906558BD208012c6C11aCa2', // USDC
+  '0x710324576c5933f2C0446136516DC3E91226f916' // DAI
 ]
 
 export const STABLE_COINS: string[] = []
